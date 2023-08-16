@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-# - base/argo-cd-ui-ingress.yaml
+- base/argo-cd-ui-ingress.yaml
 - https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/ha/install.yaml
 
 images:
