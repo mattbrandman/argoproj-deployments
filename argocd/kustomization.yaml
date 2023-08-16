@@ -7,6 +7,9 @@ resources:
 - base/argo-cd-ui-ingress.yaml
 - https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/ha/install.yaml
 
+patchesStrategicMerge:
+- overlays/production/argocd-server-service.yaml
+
 images:
 - name: quay.io/argoproj/argocd
   newName: ghcr.io/argoproj/argo-cd/argocd
