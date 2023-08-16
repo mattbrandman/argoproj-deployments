@@ -16,16 +16,5 @@ metadata:
 spec:
   ingressClassName: alb
   tls:
-  - hosts:
-    - argo.duoeks.com
-  rules:
-  - host: argo.duoeks.com
-    http:
-      paths:
-      - path: /
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: argocd-server
-            port:
-              name: https
+    hosts:
+      - argo.duoeks.com
