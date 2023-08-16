@@ -6,6 +6,7 @@ namespace: argocd
 resources:
 - https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/ha/install.yaml
 
+images:
 - name: quay.io/argoproj/argocd
   newName: ghcr.io/argoproj/argo-cd/argocd
   newTag: 2.9.0-d2720732
