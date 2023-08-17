@@ -9,7 +9,7 @@ resources:
 - https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/ha/install.yaml
 
 patchesStrategicMerge:
-# - overlays/production/argocd-cmd-params-cm.yaml
+- overlays/production/argocd-cmd-params-cm.yaml
 - overlays/production/argocd-server-service.yaml
 
 images:
