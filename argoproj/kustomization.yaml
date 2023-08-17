@@ -5,4 +5,5 @@ resources:
 - base/argo-namespace.yaml
 - base/argo-cd.yaml
 - app_of_apps/addons.yaml
+- app_of_apps/applications.yaml
 
