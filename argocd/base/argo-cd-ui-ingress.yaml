@@ -16,7 +16,7 @@
     namespace: argocd
   spec:
     rules:
-    - host: argocd.argoproj.io
+    - host: argo.duoeks.com
       http:
         paths:
         - path: /
@@ -35,4 +35,4 @@
           pathType: Prefix
     tls:
     - hosts:
-      - argocd.argoproj.io
+      - argo.duoeks.com
