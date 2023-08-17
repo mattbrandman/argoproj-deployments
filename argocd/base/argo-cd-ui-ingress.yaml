@@ -9,11 +9,10 @@
         [{"field":"http-header","httpHeaderConfig":{"httpHeaderName": "Content-Type", "values":["application/grpc"]}}]
       alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
       external-dns.alpha.kubernetes.io/hostname: argo.duoeks.com
-      alb.ingress.kubernetes.io/target-type: ip
+      # alb.ingress.kubernetes.io/target-type: ip
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:345796856102:certificate/3002d232-daa4-4493-aeb7-9aaec53cfcf0
-      alb.ingress.kubernetes.io/healthcheck-path: /healthz
-      alb.ingress.kubernetes.io/target-type: ip
+      # alb.ingress.kubernetes.io/healthcheck-path: /healthz
     name: argocd
     namespace: argocd
   spec:
